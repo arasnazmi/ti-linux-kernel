@@ -141,7 +141,7 @@
 
 	vsys_5v0: regulator-1 {
 		compatible = "regulator-fixed";
-		regulator-name = "vsys_5v0";
+		regulator-name = "vsys-5v0";
 		regulator-min-microvolt = <5000000>;
 		regulator-max-microvolt = <5000000>;
 		regulator-always-on;
@@ -151,7 +151,7 @@
 
 	vdd_3v3: regulator-2 {
 		compatible = "regulator-fixed";
-		regulator-name = "vdd_3v3";
+		regulator-name = "vdd-3v3";
 		regulator-min-microvolt = <3300000>;
 		regulator-max-microvolt = <3300000>;
 		vin-supply = <&vsys_5v0>;
@@ -161,7 +161,7 @@
 
 	vdd_mmc1: regulator-3 {
 		compatible = "regulator-fixed";
-		regulator-name = "vdd_mmc1";
+		regulator-name = "vdd-mmc1";
 		pinctrl-names = "default";
 		pinctrl-0 = <&vdd_3v3_sd_pins_default>;
 		regulator-min-microvolt = <3300000>;
@@ -189,7 +189,7 @@
 
 	vsys_io_1v8: regulator-5 {
 		compatible = "regulator-fixed";
-		regulator-name = "vsys_io_1v8";
+		regulator-name = "vsys-io-1v8";
 		regulator-min-microvolt = <1800000>;
 		regulator-max-microvolt = <1800000>;
 		regulator-always-on;
@@ -198,7 +198,7 @@
 
 	vsys_io_1v2: regulator-6 {
 		compatible = "regulator-fixed";
-		regulator-name = "vsys_io_1v2";
+		regulator-name = "vsys-io-1v2";
 		regulator-min-microvolt = <1200000>;
 		regulator-max-microvolt = <1200000>;
 		regulator-always-on;
@@ -207,7 +207,7 @@
 
 	wlan_en: regulator-7 {
 		compatible = "regulator-fixed";
-		regulator-name = "wlan_en";
+		regulator-name = "wlan-en";
 		regulator-min-microvolt = <1800000>;
 		regulator-max-microvolt = <1800000>;
 		enable-active-high;
@@ -947,7 +947,7 @@
 
 		regulators {
 			buck1_reg: buck1 {
-				regulator-name = "VDD_3V3";
+				regulator-name = "VDD-3V3";
 				regulator-min-microvolt = <3300000>;
 				regulator-max-microvolt = <3300000>;
 				regulator-boot-on;
@@ -955,7 +955,7 @@
 			};
 
 			buck2_reg: buck2 {
-				regulator-name = "VDD_1V8";
+				regulator-name = "VDD-1V8";
 				regulator-min-microvolt = <1800000>;
 				regulator-max-microvolt = <1800000>;
 				regulator-boot-on;
@@ -963,7 +963,7 @@
 			};
 
 			ldo1_reg: ldo1 {
-				regulator-name = "VDDSHV5_SDIO";
+				regulator-name = "VDDSHV5-SDIO";
 				regulator-min-microvolt = <3300000>;
 				regulator-max-microvolt = <3300000>;
 				regulator-allow-bypass;
@@ -972,7 +972,7 @@
 			};
 
 			ldo2_reg: ldo2 {
-				regulator-name = "VDD_1V2";
+				regulator-name = "VDD-1V2";
 				regulator-min-microvolt = <1200000>;
 				regulator-max-microvolt = <1200000>;
 				regulator-boot-on;
@@ -980,7 +980,7 @@
 			};
 
 			ldo3_reg: ldo3 {
-				regulator-name = "VDDA_PHY_1V8";
+				regulator-name = "VDDA-PHY-1V8";
 				regulator-min-microvolt = <1800000>;
 				regulator-max-microvolt = <1800000>;
 				regulator-boot-on;
@@ -988,7 +988,7 @@
 			};
 
 			ldo4_reg: ldo4 {
-				regulator-name = "VDDA_PLL_1V8";
+				regulator-name = "VDDA-PLL-1V8";
 				regulator-min-microvolt = <1800000>;
 				regulator-max-microvolt = <1800000>;
 				regulator-boot-on;

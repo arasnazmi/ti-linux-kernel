@@ -1051,7 +1051,8 @@ dsi0_csi1_i2c: &main_i2c0 {
 
 		iovcc-supply = <&vdd_3v3>;
 		cvcc12-supply = <&ldo2_reg>;
-
+		avcc33-supply = <&vdd_3v3>;
+		
 		interrupt-parent = <&mcu_gpio0>;
 		interrupts = <14 IRQ_TYPE_EDGE_FALLING>;
 
